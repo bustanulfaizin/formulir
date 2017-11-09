@@ -1,0 +1,8 @@
+var numposts = 100;
+var standardstyling = true;
+
+fungtion starpost(json){
+   for (var i = 0; i < numposts; i++){
+       var entry = json.feed.entry[i];
+       var posttitle = entry.title.$t;
+       var posturl;
